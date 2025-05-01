@@ -4,70 +4,106 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    margin: 0; color: white; font-family: sans-serif;
-  }
-  
-  .main-container {
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+.main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
     width: 100%;
-  }
-  
-  .header-container {
+}
+
+.header-container {
     width: 100%;
-  }
-  
-  
-  .header-content {
+}
+
+
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;}
-  
-  .logo {
+    width: 100%;
+}
+
+.logo {
     width: 100px;
     height: 100px;
-    background-color: black;
-  }
-  
-  .logo img {
-    width: 100%; height: 100%; object-fit: cover;
-  }
-  
-  .footer-container {
-    width: 100%; margin-top: 20px;
-  }
-  
-  .footer-buttons {
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-buttons {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-  }
-  .currency-converter-form {
+}
+
+.footer-buttons button,
+button {
+    background: linear-gradient(to right, #000080, #800080);
+    color: white;
+    padding: 10px 10px 10px 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.currency-converter {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(153, 41, 41, 0.2);
+}
+.currency-converter-form {
     display: grid;
     grid-template-columns: auto;
     gap: 10px;
     align-items: center;
     justify-content: center;
-  }
-  select, input{
+}
+
+select,
+input {
     width: 100%;
-  }
-  
-  .footer-buttons button, button {
-      padding: 10px 10px 10px 40px;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
     border: none;
-    cursor: pointer;
-  }
-  .github-button {
-      background-image: url('Github gh.png');
-  }
-  .button{
-      background-size: 20px;
-  }
+    border-radius: 5px;
+    background-color: #555;
+}
+
+label {
+    margin: 5px;
+    color: #ccc;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: yellow;
+}
+
+.github-button { background-image: url('Github gh.png'); }
+.share-button { background-image: url('compartir ct.png'); }
+.linkedin-button { background-image: url('Linkeind lk.png'); }
+button:hover, button:active { background: linear-gradient(to right, #808080, #c0c0c0); }
