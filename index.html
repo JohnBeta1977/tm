@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransforMoney</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Descripción de la página. Aquí se puede incluir información sobre el contenido de la página.">
+    <meta name="keywords" content="palabras clave, relacionadas, con, la, página">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Título de la página">
+    <meta property="og:description" content="Descripción para redes sociales">
+    <meta property="og:image" content="URL de la imagen">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Título de la página en Twitter">
+    <meta name="twitter:description" content="Descripción para Twitter">
+    <meta name="twitter:image" content="URL de la imagen">
+</head>
+
+<body >
+  <div class="main-container">
+    <header class="header-container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="logo_01.png" alt="Logo" />
+        </div>
+        <h1 class="title">TransforMoney</h1>
+      </div>
+    </header>
+    <main class="currency-converter-container">
+      <div class="currency-converter">
+        <label for="currency-from">De:</label>
+        <select id="currency-from" name="currency-from">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="JPY">JPY</option>
+          <option value="GBP">GBP</option>
+          <option value="AUD">AUD</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CNY">CNY</option>
+          <option value="SEK">SEK</option>
+          <option value="MXN">MXN</option>
+        </select>
+        <label for="amount-from">Cantidad:</label>
+        <input type="number" id="amount-from" name="amount-from" pattern="[0-9]+" />
+        <label for="currency-to">A:</label>
+        <select id="currency-to" name="currency-to">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="JPY">JPY</option>
+          <option value="GBP">GBP</option>
+          <option value="AUD">AUD</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CNY">CNY</option>
+          <option value="SEK">SEK</option>
+          <option value="MXN">MXN</option>
+        </select>
+        <label for="amount-to">Cantidad:</label>
+        <input type="text" id="amount-to" name="amount-to" readonly />
+        <button id="convert-button">Convertir</button>
+        <p id="result">
+          <!--Aquí se mostrará el resultado-->
+        </p>
+      </div>
+    </main>
+    <footer class="footer-container">
+      <div class="footer-buttons">
+        <button class="share-button">Compartir</button>
+        <button class="linkedin-button">LinkedIn</button>
+        <button class="github-button">GitHub</button>
+      </div>
+    </footer>
+  <script src="script.js"></script>
+  </div>
+</body>
+</html>
